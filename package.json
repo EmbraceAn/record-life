@@ -1,16 +1,19 @@
 {
   "name": "@alifd/scaffold-lite",
   "version": "0.1.0",
-  "description": "轻量级模板，使用 TypeScript，仅包含基础的 Layout。",
+  "description": "怀抱彦的小栈",
   "dependencies": {
     "@alifd/next": "^1.19.4",
     "@alifd/theme-design-pro": "0.x",
+    "create-app-shared": "^1.2.6",
     "moment": "^2.24.0",
     "react": "^17.0.2",
+    "react-app-renderer": "^3.1.0",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@iceworks/spec": "^1.0.0",
+    "@types/node": "^18.14.6",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.2",
     "build-plugin-ignore-style": "^0.1.0",
