@@ -1,39 +1,39 @@
 {
-  "name": "@alifd/scaffold-lite",
+  "name": "record-react",
   "version": "0.1.0",
-  "description": "怀抱彦的小栈",
+  "private": true,
   "dependencies": {
-    "@alifd/next": "^1.19.4",
-    "@alifd/theme-design-pro": "0.x",
-    "create-app-shared": "^1.2.6",
-    "moment": "^2.24.0",
-    "react": "^17.0.2",
-    "react-app-renderer": "^3.1.0",
-    "react-dom": "^17.0.2"
-  },
-  "devDependencies": {
-    "@iceworks/spec": "^1.0.0",
-    "@types/node": "^18.14.6",
-    "@types/react": "^17.0.2",
-    "@types/react-dom": "^17.0.2",
-    "build-plugin-ignore-style": "^0.1.0",
-    "build-plugin-moment-locales": "^0.1.0",
-    "eslint": "^7.30.0",
-    "ice.js": "^2.0.0",
-    "stylelint": "^13.2.0"
+    "@craco/craco": "^7.0.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "icejs start",
-    "build": "icejs build",
-    "lint": "npm run eslint && npm run stylelint",
-    "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx ./",
-    "eslint:fix": "npm run eslint -- --fix",
-    "stylelint": "stylelint \"**/*.{css,scss,less}\""
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/alibaba-fusion/materials/tree/master/scaffolds/scaffold-lite"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "private": true,
-  "originTemplate": "@alifd/scaffold-lite"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
